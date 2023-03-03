@@ -14,7 +14,7 @@
 * Navigate to [Percy.io](https://percy.io/) and create a new Web project
 * Export Percy token into local machine or CI tool 
 * Ex: `export PERCY_TOKEN=<token>`
-* Update the commands inside of `package.json` file to run with percy ex: `percy exec -- wdio conf/test.conf.js`
+* Update the test invocation commands inside of your `package.json` file to run with percy ex: `percy exec -- wdio conf/test.conf.js`
 
 ## Observability
 * Navigate to the [WebDriverIO Observability Integration Documentation](https://www.browserstack.com/docs/test-observability/quick-start/webdriverio) and follow these steps to 
