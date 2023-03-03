@@ -1,3 +1,5 @@
+const percySnapshot = require('@percy/webdriverio');
+
 describe("Testing with Bstackdemo", () => {
   it("add product to cart", async () => {
     await browser.url("https://bstackdemo.com/");
@@ -9,8 +11,12 @@ describe("Testing with Bstackdemo", () => {
 
     const productOnScreen = await $('//*[@id="1"]/p');
     const productOnScreenText = await productOnScreen.getText();
+    await percySnapshot('Get Text');
+
 
     const addToCart = await $('//*[@id="1"]/div[4]');
+    await percySnapshot('Cart');
+
     await addToCart.click();
 
     const productInCart = await $('//*[@id="__next"]/div/div/div[2]/div[2]/div[2]/div/div[3]/p[1]');

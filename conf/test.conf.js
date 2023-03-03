@@ -4,7 +4,7 @@ const parallelConfig = {
   maxInstances: 10,
   commonCapabilities: {
     'bstack:options': {
-      buildName: 'browserstack-build-1',
+      buildName: 'browserstack-acme-build',
       source: 'webdriverio:sample-master:v1.1'
     }
   },
